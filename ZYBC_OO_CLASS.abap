@@ -17,15 +17,16 @@ class car definition.
   "methods of the class
   METHODS: constructor IMPORTING im_name TYPE char20 im_color TYPE char20 im_fuel_type TYPE char10.
   "other way to do the constructor
-  
-  
+
+
 *  METHODS: constructor IMPORTING name type cha20 color type char20 fuel_typ type char10.
   "In-> method constructor.
 *          me->name = name.
 *          me->color = color.
-*          me->fuel_type = fuel_type.  
+*          me->fuel_type = fuel_type.
+
 *  DATA(car5) = new car( name = 'carName' color = 'carColor' fuel_type = 'carFuel' ).
-  
+
   METHODS: display.
 
 
@@ -86,19 +87,15 @@ DATA(car4) = new car( im_name = 'Wolkswagen' im_color = 'BloodyMary' im_fuel_typ
 "methods implementation
 *car1->display( ).
 
-data: index type i value 1.
 
-while indez < 5.
-
-write:/ 'Car name: ',car1->name,'Car color: ', car1->color,'Car fuel: ', car1->fuel_type.
-
-write:/ 'Car name: ', car2->name,'Car color: ', car2->color, 'Car fuel: ', car2->fuel_type.
-
-write:/ 'Car name: ', car3->name, 'Car color: ', car3->color, 'Car fuel: ', car3->fuel_type.
-
-write:/ 'Car name: ',car4->name,'Car color: ',  car4->color, 'Car fuel: ', car4->fuel_type.
-
+write:/ 'Car name: ',  car1->name,'Car color: ', car1->color,'Car fuel: ', car1->fuel_type.
 write SY-uline.
 
-index = index + 1.
-endwhile.
+write:/ 'Car name: ',  car2->name,'Car color: ', car2->color,'Car fuel: ', car2->fuel_type.
+write SY-uline.
+
+write:/ 'Car name: ',  car3->name,'Car color: ', car3->color,'Car fuel: ', car3->fuel_type.
+write SY-uline.
+
+write:/ 'Car name: ',  car4->name,'Car color: ', car4->color,'Car fuel: ', car4->fuel_type.
+write SY-uline.
