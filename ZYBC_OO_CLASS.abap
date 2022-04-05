@@ -16,6 +16,16 @@ class car definition.
 
   "methods of the class
   METHODS: constructor IMPORTING im_name TYPE char20 im_color TYPE char20 im_fuel_type TYPE char10.
+  "other way to do the constructor
+  
+  
+*  METHODS: constructor IMPORTING name type cha20 color type char20 fuel_typ type char10.
+  "In-> method constructor.
+*          me->name = name.
+*          me->color = color.
+*          me->fuel_type = fuel_type.  
+*  DATA(car5) = new car( name = 'carName' color = 'carColor' fuel_type = 'carFuel' ).
+  
   METHODS: display.
 
 
@@ -67,8 +77,8 @@ start-of-selection.
 
 
 "Second way of creating objects
-DATA(car1) = new car( im_name = 'Jyota' im_color = 'greenish' im_fuel_type = 'Hybrid' ).
-DATA(car2) = new car( im_name = 'Michubichi' im_color = 'cactus' im_fuel_type = 'Atun' ).
+DATA(car1) = new car( im_name = 'Michubichi' im_color = 'pikachu' im_fuel_type = 'Hybrid' ).
+DATA(car2) = new car( im_name = 'Krustymobil' im_color = 'clownish' im_fuel_type = 'RascaYPica' ).
 DATA(car3) = new car( im_name = 'Tesla' im_color = 'black' im_fuel_type = 'Electric' ).
 DATA(car4) = new car( im_name = 'Wolkswagen' im_color = 'BloodyMary' im_fuel_type = 'Honey' ).
 
@@ -78,7 +88,7 @@ DATA(car4) = new car( im_name = 'Wolkswagen' im_color = 'BloodyMary' im_fuel_typ
 
 data: index type i value 1.
 
-while index < 5.
+while indez < 5.
 
 write:/ 'Car name: ',car1->name,'Car color: ', car1->color,'Car fuel: ', car1->fuel_type.
 
